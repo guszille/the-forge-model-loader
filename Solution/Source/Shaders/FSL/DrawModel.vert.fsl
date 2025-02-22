@@ -1,0 +1,35 @@
+#include "Resources.h.fsl"
+
+STRUCT(VSInput)
+{
+    DATA(float3, Position, POSITION);
+    DATA(float3, Normal, NORMAL);
+    DATA(float2, TexCoord, TEXCOORD0);
+};
+
+STRUCT(VSOutput)
+{
+    DATA(float4, Position, SV_Position);
+    DATA(float4, Color, COLOR);
+};
+
+VSOutput VS_MAIN(VSInput In)
+{
+    INIT_MAIN;
+
+    VSOutput Out;
+
+    float lightIntensity = 1.0f;
+    float ambientCoeff = 0.1;
+
+    float3 lightDir = normalize(uniformBlock.lightPosition.xyz - In.Position.xyz);
+    float3 baseColor = float3(0.7, 0.4, 0.1);
+    float3 blendedColor = (uniformBlock.lightColor.rgb * baseColor) * lightIntensity;
+    float3 diffuse = blendedColor * max(dot(In.Normal.xyz, lightDir), 0.0);
+    float3 ambient = baseColor * ambientCoeff;
+
+    Out.Position = mul(uniformBlock.mvp, float4(In.Position, 1.0f));
+    Out.Color = float4(In.Normal, 1.0); // float4(diffuse + ambient, 1.0);
+
+    RETURN(Out);
+}

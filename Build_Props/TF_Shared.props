@@ -39,6 +39,6 @@
     </ClCompile>
   </ItemDefinitionGroup>
   <ImportGroup Label="PropertySheets">
-    <Import Condition="$(ProjectDir.Contains('ModelLoader'))" Project="$(TheForgeRoot)Build_Props\Examples.x64.props" />
+    <Import Project="$(TheForgeRoot)Build_Props\Examples.x64.props" />
   </ImportGroup>
 </Project>

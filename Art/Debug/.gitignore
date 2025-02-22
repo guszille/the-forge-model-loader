@@ -1,0 +1,6 @@
+# Ignore everything in this directory
+# this just keeps the dir around for everyone 
+# since git doesn't add empty dirs
+*
+# Except this file
+!.gitignore

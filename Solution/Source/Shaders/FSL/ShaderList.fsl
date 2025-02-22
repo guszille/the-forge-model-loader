@@ -1,16 +1,8 @@
-#frag basic.frag
-#include "basic.frag.fsl"
+#frag DrawModel.frag
+#include "DrawModel.frag.fsl"
 #end
 
-#vert FT_MULTIVIEW basic.vert
-#include "basic.vert.fsl"
-#end
-
-#frag skybox.frag
-#include "skybox.frag.fsl"
-#end
-
-#vert FT_MULTIVIEW skybox.vert
-#include "skybox.vert.fsl"
+#vert DrawModel.vert
+#include "DrawModel.vert.fsl"
 #end
 

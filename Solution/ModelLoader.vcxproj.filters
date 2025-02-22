@@ -18,5 +18,22 @@
     <ClCompile Include="Source\Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Custom\Model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <FSLShader Include="Source\Shaders\FSL\DrawModel.frag.fsl" />
+    <FSLShader Include="Source\Shaders\FSL\DrawModel.vert.fsl" />
+    <FSLShader Include="Source\Shaders\FSL\Resources.h.fsl" />
+    <FSLShader Include="Source\Shaders\FSL\ShaderList.fsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Custom\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Includes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
