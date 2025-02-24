@@ -86,7 +86,7 @@ public:
 		initResourceLoaderInterface(pRenderer);
 
 		// Load custom model.
-		// gModel.init("../../Art/Meshes/FBX/Castle.fbx");
+		gModel.init("../../../../Art/Meshes/FBX/Castle.fbx");
 
 		BufferLoadDesc ubDesc = {};
 		ubDesc.mDesc.mDescriptors = DESCRIPTOR_TYPE_UNIFORM_BUFFER;
@@ -121,7 +121,7 @@ public:
 
 		vec3 camPos{ 64.0f, 48.0f, 64.0f };
 		vec3 camLookAt{ vec3(0.0f) };
-		CameraMotionParameters camMotionParams{ 150.0f, 500.0f, 200.0f };
+		CameraMotionParameters camMotionParams{ 160.0f, 600.0f, 200.0f };
 
 		pCameraController = initFpsCameraController(camPos, camLookAt);
 		pCameraController->setMotionParameters(camMotionParams);

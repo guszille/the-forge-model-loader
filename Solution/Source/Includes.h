@@ -13,6 +13,8 @@
 #include <Application/Interfaces/IScreenshot.h>
 #include <Application/Interfaces/IUI.h>
 
+#include <OS/Interfaces/IInput.h>
+
 #include <Game/Interfaces/IScripting.h>
 
 #include <Utilities/Interfaces/IFileSystem.h>

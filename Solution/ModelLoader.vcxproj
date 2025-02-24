@@ -121,7 +121,7 @@
       <SubSystem>Windows</SubSystem>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>Xinput9_1_0.lib;ws2_32.lib;Renderer.lib;OS.lib;assimp\DebugNoShared\assimp-vc143-mtd.lib;assimp\DebugNoShared\zlibstaticd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Xinput9_1_0.lib;ws2_32.lib;Renderer.lib;OS.lib;assimp\ReleaseNoShared\assimp-vc143-mt.lib;assimp\ReleaseNoShared\zlibstatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <EntryPointSymbol>mainCRTStartup</EntryPointSymbol>
       <AdditionalOptions>/ENTRY:mainCRTStartup %(AdditionalOptions)</AdditionalOptions>
       <AdditionalOptions>/ignore:4099</AdditionalOptions>

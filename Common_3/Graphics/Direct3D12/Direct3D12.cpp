@@ -5095,7 +5095,7 @@ void updateDescriptorSet(Renderer* pRenderer, uint32_t index, DescriptorSet* pDe
     ASSERT(index < pDescriptorSet->mDx.mMaxSets);
 
     const RootSignature*            pRootSignature = pDescriptorSet->mDx.pRootSignature;
-    const DescriptorUpdateFrequency updateFreq = (DescriptorUpdateFrequency)pDescriptorSet->mDx.mUpdateFrequency;
+    // const DescriptorUpdateFrequency updateFreq = (DescriptorUpdateFrequency)pDescriptorSet->mDx.mUpdateFrequency;
     const uint32_t                  nodeIndex = pDescriptorSet->mDx.mNodeIndex;
 
     for (uint32_t i = 0; i < count; ++i)
