@@ -1,5 +1,5 @@
 /*
- * Model loader application, by Gustavo Zille.
+ * Model Loader Application, by Gustavo Zille.
  */
 
 #include "Includes.h"
